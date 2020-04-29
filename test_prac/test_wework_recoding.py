@@ -56,6 +56,7 @@ class TestWeworkRecoding():
         el3 = self.driver.find_element_by_id("com.tencent.wework:id/ffq")
         el3.send_keys(search_key)
         el3.click()
+        # 这里需要改为 相对定位  绝对定位实际应用中比较少
         el4 = self.driver.find_element_by_xpath(
             "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.TextView")
         el4.click()
